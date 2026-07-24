@@ -1,6 +1,8 @@
-# Facebook Lead Ads to WhatsApp (via Zernio API)
+# Meta Lead Ads to WhatsApp (via Zernio API)
 
-This Cloudflare Worker script automatically captures new leads from Facebook Lead Ads webhooks and instantly sends them a customized WhatsApp template message using the [Zernio API](https://zernio.com).
+A serverless Cloudflare Worker to instantly route new Meta Lead Ads to WhatsApp using the Zernio API.
+
+This script automatically captures new leads from Meta webhooks and instantly sends them a customized WhatsApp template message, ensuring immediate engagement.
 
 ## 🚀 Features
 - **Zero Server Costs**: Runs entirely on Cloudflare Workers (The Free tier handles up to 100,000 requests/day).
@@ -17,8 +19,8 @@ You must configure the following in your Cloudflare Worker settings (`Settings >
 - `ZERNIO_API_KEY`: Your Zernio API token (Add this as an encrypted **Secret**).
 - `ZERNIO_ACCOUNT_ID`: Your Zernio WhatsApp Inbox ID (Alphanumeric string, e.g., `6a52...`).
 
-### 3. Facebook Form Fields Mapping
-**CRITICAL**: The script expects the Facebook Lead Form to use specific field names. Ensure your Facebook Form fields match the variables expected in the code:
+### 3. Meta Form Fields Mapping
+**CRITICAL**: The script expects the Meta Lead Form to use specific field names. Ensure your Meta Form fields match the variables expected in the code:
 - `phoneNumber`
 - `fullName`
 
